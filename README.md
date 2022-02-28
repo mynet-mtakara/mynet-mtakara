@@ -12,4 +12,18 @@ You can click the Preview link to take a look at your changes.
 
 
 ```
+@startuml
+Bob ->x Alice
+Bob -> Alice
+Bob ->> Alice
+Bob -\ Alice
+Bob \\- Alice
+Bob //-- Alice
+
+Bob ->o Alice
+Bob o\\-- Alice
+
+Bob <-> Alice
+Bob <->o Alice
+@enduml
 ```
