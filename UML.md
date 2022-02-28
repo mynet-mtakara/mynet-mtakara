@@ -12,11 +12,12 @@ TeamduelController -> ブラウザ : 結果表示
 ## 不具合
 ```
 @startuml
-ブラウザA -> TeamduelController  : バトルを挑む 
-TeamduelController -> memcache : user情報取得
-TeamduelController -> TeamduelController : 戦闘処理
-TeamduelController -> memcache : user情報保存
-TeamduelController -> mysql : user情報保存
-TeamduelController -> ブラウザA : 結果表示
+ブラウザA -> TeamduelController A  : バトルを挑む 
+ブラウザB -> TeamduelController B  : バトルを挑む 
+TeamduelController A -> memcache : user情報取得
+TeamduelController A -> TeamduelController : 戦闘処理
+TeamduelController A -> memcache : user情報保存
+TeamduelController A -> mysql : user情報保存
+TeamduelController A -> ブラウザA : 結果表示
 @enduml
 ```
