@@ -13,9 +13,10 @@ TeamduelController -> ブラウザ : 結果表示
 ```
 @startuml
 ブラウザA -> TeamduelController  : バトルを挑む 
-TeamduelController -> memcache : lock
+TeamduelController -> memcache : user情報取得
 TeamduelController -> TeamduelController : 戦闘処理
-TeamduelController -> memcache : unlock
+TeamduelController -> memcache : user情報保存
+TeamduelController -> mysql : user情報保存
 TeamduelController -> ブラウザA : 結果表示
 @enduml
 ```
