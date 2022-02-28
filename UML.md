@@ -1,5 +1,5 @@
 ```
 @startuml
-ブラウザ -> Alice
+ブラウザA -> AAA : バトルを挑む 
 @enduml
 ```
