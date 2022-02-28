@@ -1,16 +1,5 @@
 ```
 @startuml
-Bob ->x Alice
-Bob -> Alice
-Bob ->> Alice
-Bob -\ Alice
-Bob \\- Alice
-Bob //-- Alice
-
-Bob ->o Alice
-Bob o\\-- Alice
-
-Bob <-> Alice
-Bob <->o Alice
+ブラウザ -> Alice
 @enduml
 ```
