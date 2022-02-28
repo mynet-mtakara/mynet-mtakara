@@ -1,5 +1,6 @@
 ```
 @startuml
-ブラウザA -> AAA : バトルを挑む 
+ブラウザA -> TeamduelController  : バトルを挑む 
+TeamduelController -> memcache
 @enduml
 ```
