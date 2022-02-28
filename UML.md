@@ -19,5 +19,10 @@ TeamduelControllerA -> TeamduelController : 戦闘処理
 TeamduelControllerA -> memcache : user情報保存
 TeamduelControllerA -> mysql : user情報保存
 TeamduelControllerA -> ブラウザA : 結果表示
+TeamduelControllerB -> memcache : user情報取得
+TeamduelControllerB -> TeamduelController : 戦闘処理
+TeamduelControllerB -> memcache : user情報保存
+TeamduelControllerB -> mysql : user情報保存
+TeamduelControllerB -> ブラウザB : 結果表示
 @enduml
 ```
