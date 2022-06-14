@@ -12,5 +12,8 @@ aaa
 PVP
 DuelController::processAction()
 
-		$duel = new App_Duel_PvP( $owner );
-		App_Duel::handleProcessSkill( $owner, $duel, $data );
+```
+$duel = new App_Duel_PvP( $owner );
+App_Duel::handleProcessSkill( $owner, $duel, $data );
+$duel->execute( $attack_deck, $defense_deck, $target, $treasure, $use_fight );		
+```
