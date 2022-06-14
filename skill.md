@@ -17,3 +17,9 @@ $duel = new App_Duel_PvP( $owner );
 App_Duel::handleProcessSkill( $owner, $duel, $data );
 $duel->execute( $attack_deck, $defense_deck, $target, $treasure, $use_fight );		
 ```
+
+<script src="/easeljs-0.6.0.min.js"></script>
+<script src="/tweenjs-0.4.0.min.js"></script>
+<script src="/movieclip-0.6.0.min.js"></script>
+<script src="/preloadjs-0.3.0.min.js"></script>
+<script src="/asset/js?f=lib/app/gimmick/duel/6/pvp_battle.js&amp;_v=38&amp;nocache=1"></script>
